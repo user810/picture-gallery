@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="lazyload.js" defer></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/lightbox2/dist/css/lightbox.css'>
+</head>
+
+<body class="mt-24 sm:mt-40">
+    <header class="bg-navbar">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <div class="navbar-branding">
+                    <img src="assets/logo.svg" class="logo" alt="logo">
+                    <h1>Picture-gallery</h1>
+                </div>
+                <button type="button" class="focus:border-transparent sm:hidden" id="navbar-toggle">
+                    <img src="assets/menu.svg" class="menu-button" alt="menu">
+                </button>
+            </div>
+            <div class="nav-link-container hidden sm:block sm:mt-6 sm:mb-2" id="nav-link-container">
+                <ul class="nav-link-ul">
+                    <a href="main.html" class="nav-link focus:border-gray-100 sm:inline">Gallery</a>
+                    <a href="about.html" class="nav-link focus:border-gray-100 sm:inline">About</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container mx-auto">
+        <main>
+            <div class="header">
+                <h1>Gallery</h1>
+            </div>
+            <div class="content">
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/4.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/4_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/21.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/21_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/6.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/6_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/11.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/11_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/9.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/9_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/21.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/21_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/4.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/4_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/23.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/23_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/18.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/18_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/20.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/20_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/5.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/5_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/14.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/14_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/10.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/10_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/16.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/16_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/22.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/22_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/19.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/19_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/23.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/23_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/2 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/4.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/4_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/21.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/21_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/6.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/6_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/9.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/9_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/15.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/15_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/2 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/14.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/14_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/6.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/6_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/11.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/11_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/9.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/9_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/21.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/21_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/4.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/4_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/23.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/23_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/18.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/18_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/20.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/20_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/5.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/5_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/14.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/14_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/10.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/10_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/16.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/16_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/22.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/22_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/19.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/19_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/23.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/23_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/2 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/4.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/4_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/21.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/21_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/6.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/6_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/9.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/9_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/15.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/15_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/2 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/14.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/14_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/6.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/6_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/11.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/11_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/9.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/9_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/1.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/1_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/8.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/8_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/3.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/3_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/12.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/12_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/21.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/21_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/7.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/7_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/4.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/4_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/2.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/2_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/23.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/23_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/18.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/18_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/20.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/20_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/5.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/5_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/14.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/14_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/10.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/10_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/16.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/16_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/17.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/17_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/22.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/22_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/19.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/19_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div class="img-container w-1/3 sm:w-1/4 md:w-1/5">
+                    <a href="assets/images/23.webp" data-lightbox="img">
+                        <img class="lazy-image" src="assets/images/placeholder.jpg"
+                            data-src="assets/images/thumbs/23_thumb.webp" alt="" loading="lazy">
+                    </a>
+                </div>
+        </main>
+    </div>
+
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script src='main.js'></script>
+    <script>
+        // Navbar toggle
+        document.getElementById('navbar-toggle').onclick = function () {
+            document.getElementById("nav-link-container").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>

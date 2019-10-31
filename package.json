@@ -1,0 +1,26 @@
+{
+  "name": "picture-gallery",
+  "version": "1.0.0",
+  "description": "Picture gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "all": "npm run-script build && npm run-script minify",
+    "build": "postcss tailwind/ -d build/css/",
+    "watch": "postcss tailwind/ -d build/css/ -w",
+    "minify": "purgecss -c purgecss.config.js -o build/css/minified/ && postcss build/css/minified/main.css > css/main.css"
+  },
+  "author": "Jankku",
+  "license": "ISC",
+  "dependencies": {
+    "lightbox2": "^2.11.1",
+    "tailwindcss": "^1.1.3"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "node-thumbnail": "^0.15.0",
+    "postcss": "^7.0.21",
+    "postcss-cli": "^6.1.3",
+    "purgecss": "^1.4.1"
+  }
+}

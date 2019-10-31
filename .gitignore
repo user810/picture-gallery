@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+assets/*
+!assets/fonts
+!assets/*.svg
+!assets/images
+assets/images/original/
+assets/images/libwebp/
+assets/images/thumbs/w100
+assets/images/thumbs/w200
+assets/images/thumbs/w250-original

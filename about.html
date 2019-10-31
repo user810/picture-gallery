@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+
+<body class="mt-24 sm:mt-40">
+    <header class="bg-navbar">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <div class="navbar-branding">
+                    <img src="assets/logo.svg" class="logo" alt="logo">
+                    <h1>Picture-gallery</h1>
+                </div>
+                <button type="button" class="hover:border-transparent sm:hidden" id="navbar-toggle">
+                    <img src="assets/iconfinder-icon.svg" class="menu-button" alt="menu">
+                </button>
+            </div>
+            <div class="nav-link-container hidden sm:block sm:mt-6 sm:mb-2" id="nav-link-container">
+                <ul class="nav-link-ul">
+                    <a href="main.html" class="nav-link hover:border-gray-100 sm:inline">Gallery</a>
+                    <a href="about.html" class="nav-link hover:border-gray-100 sm:inline">About</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container mx-auto">
+        <article class="article">
+            <h1 class="text-2xl font-display">About us</h1>
+            <p class="font-mono tracking-wide text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's  standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting,  remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum. 
+            </p>
+            <p class="italic text-gray-500">- Jankku</p>
+        </article>
+
+        <div class="max-w-sm w-full bg-gray-100 ml-5 mt-8">
+            <div>
+                <ul>
+                    <a class="inline-block bg-gray-500 mx-2 px-4 py-2 border rounded font-bold text-blue-500 border-blue-500 border:border-blue-500 hover:border-blue-700 hover:text-blue-700" href="#">Github</a>
+                    <a class="inline-block bg-gray-500 mx-2 px-4 py-2 border rounded font-bold text-blue-500 border-blue-500 border:border-blue-500 hover:border-blue-700 hover:text-blue-700" href="#">Twitter</a>
+                    <a class="inline-block bg-gray-500 mx-2 px-4 py-2 border rounded font-bold text-blue-500 border-blue-500 border:border-blue-500 hover:border-blue-700 hover:text-blue-700" href="#">Discord</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Navbar toggle
+        document.getElementById('navbar-toggle').onclick = function () {
+            document.getElementById("nav-link-container").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>

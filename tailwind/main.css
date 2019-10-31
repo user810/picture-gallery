@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 400;
+    src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 700;
+    src: url('../assets/fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+body {
+    @apply bg-background text-gray-100;
+}
+
+/* NAVBAR START */
+.navbar {
+    @apply bg-navbar items-center justify-between fixed shadow font-display top-0 w-full px-4 py-4 z-0;
+}
+
+.logo {
+    @apply w-8 h-8 mr-1;
+}
+
+.navbar-content {
+    @apply flex items-center justify-between;
+}
+
+.navbar-branding {
+    @apply flex items-center text-xl justify-between;
+}
+
+.nav-link-container {
+   
+    @apply mt-4;
+}
+
+.nav-link {
+    @apply block text-gray-200 m-1 py-3 px-2 rounded;
+}
+
+.nav-link:hover {
+    @apply bg-navbar-item-hover;
+}
+
+.menu-button {
+    @apply w-8 h-8;
+}
+/* NAVBAR END */
+
+.header {
+    font-family: 'Open Sans Bold', sans-serif;
+    @apply my-5 text-4xl text-gray-100 text-center;
+}
+
+.content {
+    @apply flex flex-wrap justify-center;
+}
+
+.article {
+    @apply px-4;
+}
+
+/* PICTURES START */
+.img-container {
+    @apply flex flex-wrap flex-shrink my-2 mx-2;
+}
+
+.img-container img {
+    @apply rounded-sm object-cover overflow-hidden w-full h-full;
+}
+
+/* PICTURES END */
